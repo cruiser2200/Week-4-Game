@@ -3,12 +3,60 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Crystal Collector</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="Assets/css/reset.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="Assets/css/style.css" />
+    <script src="Assets/javascript/game.js"></script>
 </head>
 <body>
+    <!-- headline here -->
+    <div id="headline">
+        <h1>Crystal Collector Game!</h1>
+    </div>
+    <!-- instructions here -->
+    <div id="instructions">
+        <p>You will be given a random number at the beginning of each game.</p>
+        <p>There are four crystals displayed below.  By selecting a specific crystal, you will be adding points to your number.</p>
+        <p>You win the game if your number exactly matches the random number.  You lose the game if your number exceeds the random nummber.</p>
+        <p>the value of each crystal is hidden from you until you click it.</p>
+        <p>Each time that a new game begins, each crystal is assigned a new value.</p>
+    </div>
+    <div class="row">
+        <!-- random number displayed here -->
+        <div id="randomNumber">
+            <h2 class="numTitle">Your Goal:</h2>
+
+        </div>
+        <!-- your number displayed here -->
+        <div id="yourNumber">
+            <h2 class="numTitle">Your Number:</h2>
+
+    </div>
+    <div class="row">
+        <!-- crystals displayed here -->
+        <div id="crystals">
+
+        </div>
+    </div>
+
+    </div>
+    <!-- win/loss tally  and new game button here -->
+    <div class="row">
+        <div id"wins">
+
+        </div>
+        <div id="newGame">
+
+        </div>
+        <div id="losses">
+
+        </div>
+    </div>
+    <footer id="footer1">
+        <p>&copy; Copyright 2018 Mike Smith</p>
+    </footer>
     
 </body>
 </html>
