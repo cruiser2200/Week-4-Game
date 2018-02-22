@@ -1,0 +1,58 @@
+body {
+    margin: 20px;
+}
+
+#headline {
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 52px;
+    font-weight: bold;
+}
+
+#tallyBar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#crystals {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 135px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid rgb(131, 2, 2);
+    background-color: rgb(53, 50, 46);
+}
+
+#randomNumber {
+    text-align: center;
+    border: 2px solid rgb(131, 2, 2);
+}
+
+#yourNumber {
+    text-align: center;
+    border: 2px solid rgb(131, 2, 2);
+}
+
+#instructions {
+    background-color: rgb(53, 50, 46);
+    color: rgb(251, 252, 247);
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid rgb(131, 2, 2);
+}
+
+#footer1 {
+    background-color: rgb(53, 50, 46);
+    color: rgb(251, 252, 247);
+    text-align: center;
+    font-size: 12px;
+    padding: 20px;
+}
