@@ -43,10 +43,10 @@
         <!-- crystals displayed here -->
         <section id="crystals">
             <div class="col-xs-2"></div>
-            <button class="col-xs-2" class="crystalImage" id="redCrystal"><img src="Assets/images/redCrystal2.jpg" width="80px"></button>
-            <button class="col-xs-2" class="crystalImage" id="clearCrystal"><img src="Assets/images/clearCrystal2.jpg" width="80px"></button>
-            <button class="col-xs-2" class="crystalImage" id="yellowCrystal"><img src="Assets/images/yellowCrystal2.jpg" width="80px"></button>
-            <button class="col-xs-2" class="crystalImage" id="blueCrystal"><img src="Assets/images/blueCrystal.jpg" width="80px"></button>
+            <button class="col-xs-2" class="crystalImage" id="redCrystal" value=""><img src="Assets/images/redCrystal2.jpg" width="80px"></button>
+            <button class="col-xs-2" class="crystalImage" id="clearCrystal" value=""><img src="Assets/images/clearCrystal2.jpg" width="80px"></button>
+            <button class="col-xs-2" class="crystalImage" id="yellowCrystal" value=""><img src="Assets/images/yellowCrystal2.jpg" width="80px"></button>
+            <button class="col-xs-2" class="crystalImage" id="blueCrystal" value=""><img src="Assets/images/blueCrystal.jpg" width="80px"></button>
             <div class="col-xs-2"></div>
             
 
@@ -58,19 +58,19 @@
     <div class="row" id="tallyBar">
         <div id"wins" class="col-xs-4">
             <button class="btn btn-primary btn-lg" type="button">
-                WINS <span class="badge">4</span>
+                WINS <span class="badge" id="numberWins">0</span>
             </button>
 
         </div>
         <div id="newGame" class="col-xs-4">
-            <button class="btn btn-warning btn-lg" type="button">
+            <button class="btn btn-warning btn-lg" type="button" id="newGame">
                 NEW GAME
             </button>
 
         </div>
         <div id="losses" class="col-xs-4">
             <button class="btn btn-primary btn-lg" type="button">
-                LOSSES <span class="badge">3</span>
+                LOSSES <span class="badge" id="numberLosses">0</span>
             </button>
 
         </div>
