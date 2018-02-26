@@ -1,9 +1,5 @@
 // start game
 
-
-
-
-
     $(document).ready(function() {
 
 // generate random number for yourGoal number
@@ -12,6 +8,21 @@
         
         $("#yourGoal").text(random);
 
+        function winner() {
+            alert("Woohoo! You Won!!");
+            wins++;
+            $("#numberWins").text(wins);
+            reset();
+            console.log(wins);
+        }
+        
+        function loser() {
+            alert("Drats! You Lose!!");
+            losses++;
+            $("#numberLosses").text(losses);
+            reset();
+            console.log(losses);
+        }
 // assign values to crystal buttons
         
         var num1 = Math.floor(Math.random()*12+1);
@@ -25,6 +36,7 @@
             userTotal = userTotal + num1;
             console.log("New userTotal " + userTotal);
             $("#subTotal").text(userTotal);
+            gameOver();
         });
 
         $("#clearCrystal").on("click", function() {
@@ -33,6 +45,7 @@
             userTotal = userTotal + num2;
             console.log("New userTotal " + userTotal);
             $("#subTotal").text(userTotal);
+            gameOver();
         });
 
         $("#yellowCrystal").on("click", function() {
@@ -41,6 +54,7 @@
             userTotal = userTotal + num3;
             console.log("New userTotal " + userTotal);
             $("#subTotal").text(userTotal);
+            gameOver();
         });
 
         $("#blueCrystal").on("click", function() {
@@ -49,18 +63,22 @@
             userTotal = userTotal + num4;
             console.log("New userTotal " + userTotal);
             $("#subTotal").text(userTotal);
+            gameOver();
         });
 
 // play game
+
+function gameOver() {
 
 if (userTotal === random) {
     winner()
 }
 
 else if (userTotal > random) {
-    loser()
+    loser();
 } 
-        
+   
+}
 // tally wins and losses
 
         var userTotal= 0;
@@ -69,6 +87,8 @@ else if (userTotal > random) {
         
         $("#numberWins").text(wins);
         $("#numberLosses").text(losses);
+
+       
         
         function reset() {
             random = Math.floor(Math.random()*102+19);
@@ -81,33 +101,12 @@ else if (userTotal > random) {
             userTotal = 0;
             $("#subTotal").text(userTotal);
         }
-        
-        function winner() {
-            alert("Woohoo! You Won!!");
-            wins++;
-            $("#numberWins").text(wins);
-            reset();
-        }
-        
-        function loser() {
-            alert("Drats! You Lose!!");
-            losses++;
-            $("#numberLosses").text(losses);
-            reset();
-        }
-        
+
+    
         $("#newGame").on("click", function() {
 
-            // userTotal = userTotal + num1;
-            // console.log("New userTotal " + userTotal);
-            // $("#subTotal").text(userTotal);
-        
-            if (userTotal === random) {
-                winner()
-            }
-        
-            else if (userTotal > random) {
-                loser()
-            } 
-        })
-        });
+            reset();
+
+        })    
+
+    })
