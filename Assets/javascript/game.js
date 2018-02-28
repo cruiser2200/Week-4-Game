@@ -12,19 +12,21 @@
 // winner/loser functions
 
         function winner() {
-            alert("Woohoo! You Won!!");
+
             $.playSound("Assets/audio/Blastwave_FX.mp3");
             wins++;
             $("#numberWins").text(wins);
+            alert("Woohoo! You Won!!");
             // reset();
             // console.log(wins);
         }
         
         function loser() {
-            alert("Drats! You Lose!!");
+
             $.playSound("Assets/audio/spring_hit_wobble.mp3");
             losses++;
             $("#numberLosses").text(losses);
+            alert("Drats! You Lose!!");
             // reset();
             // console.log(losses);
         }
